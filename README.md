@@ -11,13 +11,12 @@ Roomify is an AI-powered hostel and mess management platform designed to simplif
 Manage rooms, occupancy, and students efficiently.
 
 ![Dashboard]
-<img width="1920" height="1080" alt="Screenshot 2026-05-24 155325" src="https://github.com/user-attachments/assets/be6e258e-1f18-4e5d-93cc-6500a0ce51fd" />
-<img width="1920" height="1080" alt="Screenshot 2026-05-24 155439" src="https://github.com/user-attachments/assets/0c67c416-1783-424e-977c-6139144b742a" />
-
+<img width="1920" height="1080" alt="Screenshot 2026-05-24 155325" src="https://github.com/user-attachments/assets/be6e258e-1f18-4e5d-93cc-6500a0ce51fd" />\
+<img width="1920" height="1080" alt="Screenshot 2026-05-24 155346" src="https://github.com/user-attachments/assets/31ed0927-34ce-4052-8a8d-6f48e02b0f11" />
 
 ---
 
 ### 🤖 AI Sentiment Analysis
 Analyze student feedback using Machine Learning.
 
-<img width="1920" height="1080" alt="Screenshot 2026-05-24 155346" src="https://github.com/user-attachments/assets/31ed0927-34ce-4052-8a8d-6f48e02b0f11" />
+<img width="1920" height="1080" alt="Screenshot 2026-05-24 155439" src="https://github.com/user-attachments/assets/0c67c416-1783-424e-977c-6139144b742a" />
