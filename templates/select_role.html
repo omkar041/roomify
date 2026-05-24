@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Role - Roomify</title>
+    <style>
+     body {
+    background: url("{{ url_for('static', filename='img/bg.jpg') }}") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #f1dec955;
+    z-index: -1;
+}
+
+/* Logo */
+.logo {
+    width: 180px;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 20px;
+
+    background: #f1dec9;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   MOBILE FIRST (DEFAULT)
+========================= */
+.roles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.role-card {
+    width: 100%;
+    max-width: 260px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #ce9a78, #eacaad);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+}
+
+.role-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (min-width: 768px) {
+    .roles {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .role-card {
+        width: 150px;
+        height: 100px;
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   LAPTOP / DESKTOP (YOUR OLD DESIGN)
+========================= */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 700px;
+        padding: 60px;
+        border-radius: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .roles {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;   /* 🔥 single row */
+        gap: 40px;
+    }
+
+    .role-card {
+        width: 160px;
+        height: 120px;
+        font-size: 18px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Logo at Top -->
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Roomify Logo" class="logo">
+
+    <!-- Role Selection Box -->
+    <div class="container">
+        <h2>Select Your Role</h2>
+        <div class="roles">
+            <a href="{{ url_for('login', role='student') }}" class="role-card">Student</a><br>
+            <a href="{{ url_for('login', role='room_owner') }}" class="role-card">Room Owner</a><br>
+            <a href="{{ url_for('login', role='mess_owner') }}" class="role-card">Mess Owner</a>
+
+        </div>
+    </div>
+</body>
+</html>

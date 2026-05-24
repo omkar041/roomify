@@ -1,0 +1,32 @@
+﻿Flask==3.0.2
+gunicorn==23.0.0
+
+# Database
+pymongo==4.13.2
+dnspython==2.7.0
+
+# Auth & Security
+Flask-Login==0.6.3
+Flask-Bcrypt==1.0.1
+
+# Forms
+Flask-WTF==1.2.1
+WTForms==3.1.2
+
+# Email (optional)
+Flask-Mail==0.10.0
+
+# Image Upload
+cloudinary==1.44.1
+
+# Utils
+python-dotenv==1.1.0
+requests==2.32.3
+
+# REQUIRED dependency (Flask needs this explicitly sometimes)
+Werkzeug==3.0.1
+
+nltk==3.9.1
+matplotlib
+
+
